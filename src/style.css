@@ -2012,7 +2012,7 @@ body{
   
   /* Hero section */
   .hero {
-    height: 130vh;
+    height: 950px;
     overflow-y: visible;
     padding-bottom: 40px;
   }
