@@ -2008,8 +2008,8 @@ body{
   
   /* Hero section */
   .hero {
-    min-height: 100svh;
-    overflow-y: auto !important;
+    height: 100vh;
+    overflow-y: visible;
   }
   
   .card {
@@ -2017,7 +2017,8 @@ body{
     padding: 20px 15px;
     align-items: center;
     justify-content: flex-start;
-    min-height: 100svh;
+    height: 100vh;
+    box-sizing: border-box;
   }
   .cc-btn {
     width: fit-content;
