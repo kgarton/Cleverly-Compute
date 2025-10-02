@@ -1752,9 +1752,9 @@ body{
 
 /* Hide side navigation on mobile/tablet */
 @media (max-width: 1024px) {
-  /* Make scroll snapping less aggressive on mobile/tablet */
+  /* Remove scroll snapping on mobile/tablet for natural scrolling */
   .stack {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: none;
   }
   
   #marketing-wrap {
@@ -2001,11 +2001,9 @@ body{
 
 /* Mobile (640px and down) */
 @media (max-width: 640px) {
-  /* Enhanced mobile scroll behavior */
+  /* Natural scrolling on mobile - no snap restrictions */
   .stack {
-    scroll-snap-type: y proximity;
-    scroll-padding-top: 20px;
-    scroll-padding-bottom: 20px;
+    scroll-snap-type: none;
   }
   
   /* Hero section */
