@@ -1801,6 +1801,10 @@ body{
     padding: 20px;
   }
 
+  .hero {
+    padding-bottom: 40px;
+  }
+
   #services {
     flex-direction: column-reverse;
   }
@@ -2008,8 +2012,9 @@ body{
   
   /* Hero section */
   .hero {
-    height: 100vh;
+    height: 130vh;
     overflow-y: visible;
+    padding-bottom: 40px;
   }
   
   .card {
