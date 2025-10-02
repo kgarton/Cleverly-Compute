@@ -1752,6 +1752,11 @@ body{
 
 /* Hide side navigation on mobile/tablet */
 @media (max-width: 1024px) {
+  /* Make scroll snapping less aggressive on mobile/tablet */
+  .stack {
+    scroll-snap-type: y proximity;
+  }
+  
   #marketing-wrap {
     padding-bottom: 60px;
   }
@@ -1846,6 +1851,9 @@ body{
     padding: 25px;
   }
   
+  .typing-container p{
+    font-size: 11px !important;
+  }
   .button-row {
     flex-wrap: wrap;
     justify-content: center;
@@ -1993,6 +2001,13 @@ body{
 
 /* Mobile (640px and down) */
 @media (max-width: 640px) {
+  /* Enhanced mobile scroll behavior */
+  .stack {
+    scroll-snap-type: y proximity;
+    scroll-padding-top: 20px;
+    scroll-padding-bottom: 20px;
+  }
+  
   /* Hero section */
   .hero {
     min-height: 100svh;
