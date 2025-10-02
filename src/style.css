@@ -123,6 +123,7 @@ body{
   transition: opacity .6s ease-out, transform .6s ease-out, filter .6s ease-out;
   will-change: opacity, transform, filter;
   margin-bottom: 0;
+  margin-top: 20px;
 }
 .services-heading.is-visible{
   opacity: 1;
@@ -568,7 +569,6 @@ body{
 
 .heart-circuit {
   margin-left: -100px;
-  width: 400px;
 }
 .services-content {
   width: 50%;
@@ -727,6 +727,8 @@ body{
   opacity:.35;
   animation: twinkle 6s ease-in-out infinite alternate;
   z-index:2;
+  max-height: 100vh;
+  width: 100%;
 }
 @keyframes twinkle{
   from{ filter:brightness(.9); transform:translateY(0); }
@@ -1157,7 +1159,7 @@ body{
 .work-wrap{
   max-width: 1200px;
   margin: 0 auto;
-  padding: clamp(24px, 4vw, 40px);
+  padding: 40px;
 }
 
 .work-head{
@@ -1166,6 +1168,7 @@ body{
 }
 .work-heading {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .work-sub{
   color: var(--ink);
@@ -1178,7 +1181,7 @@ body{
 .work-grid{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: clamp(14px, 2vw, 22px);
+  gap: 40px;
 }
 .case{
   grid-column: span 12;
@@ -1701,6 +1704,26 @@ body{
   display: none;
 }
 
+@media screen and (max-width: 1425px) {
+  .marketing-heading {
+    margin-left: 0;
+  }
+  #get-started-growing {
+    margin-right: 0;
+  }
+  .marketing-slider {
+    margin-left: 0;
+    gap: 5%
+  }
+  .marketing-wrap {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .marketing-slide svg {
+    width: 36vw;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .cleverly-compute-text-svg {
     width: 100%;
@@ -1729,6 +1752,9 @@ body{
 
 /* Hide side navigation on mobile/tablet */
 @media (max-width: 1024px) {
+  #marketing-wrap {
+    padding-bottom: 60px;
+  }
   .side-bar-nav {
     display: none;
   }
@@ -1738,6 +1764,26 @@ body{
   .static-robot-svg {
     display: flex;
     width: 50%
+  }
+  .nav-wrap {
+    position: absolute;
+    top: -30px;
+    right: -16vw;
+  }
+  #marketing, #work{
+    padding-bottom: 40px;
+  }
+  #contact {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .field textarea {
+    max-width: 94%;
+  }
+  .field input {
+    max-width: 94% !important;
   }
 }
 
@@ -1780,11 +1826,12 @@ body{
   .gradient-text {
     font-size: 18px;
     line-height: 24px;
+    margin: 0;
   }
   
   .slogan {
     margin-left: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .tagline {
@@ -1822,7 +1869,6 @@ body{
 
   .top-marketing-section {
     flex-direction: column;
-    width: 80%;
     margin: 0 auto;
   }
   
@@ -1854,8 +1900,6 @@ body{
     gap: 40px;
     margin-left: 0;
     width: 80%;
-    padding-right: 30px;
-    padding-left: 30px;
   }
 
   .slider-track {
@@ -1866,8 +1910,7 @@ body{
   }
 
   .marketing-slide svg {
-    width: 240px !important;
-    height: 240px !important;
+    width: 62vw !important;
     margin: 0 auto;
   }
   
@@ -1875,6 +1918,7 @@ body{
     margin-left: 0;
     font-size: 48px;
     line-height: 56px;
+    margin-bottom: 20px;
   }
   
   .cyan-indented-content {
@@ -1882,8 +1926,9 @@ body{
   }
   
   #get-started-growing {
-    margin-top: 30px;
+    margin-top: 0;
     margin-right: 0;
+    margin-bottom: 20px;
   }
   
   .slider-track {
@@ -1894,7 +1939,7 @@ body{
   
   /* Work section */
   .work-grid {
-    gap: 20px;
+    gap: 30px;
   }
   
   .case {
@@ -1962,7 +2007,7 @@ body{
     min-height: 100svh;
   }
   .cc-btn {
-    width: 90%;
+    width: fit-content;
   }
   .box-wrap {
     order: 1;
@@ -1992,7 +2037,6 @@ body{
   
   .slogan {
     margin-left: 0;
-    margin-bottom: 20px;
   }
   
   .tagline {
@@ -2017,8 +2061,14 @@ body{
   
   .button-row {
     flex-direction: column;
-    align-items: stretch;
+    justify-content: center;
+    align-items: center;
     gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .button-row a {
+    width: 90% !important;
   }
   
   .cc-btn--lg {
@@ -2071,7 +2121,6 @@ body{
   }
   
   .marketing-slide svg {
-    max-width: 300px;
     padding: 20px;
   }
   
@@ -2128,11 +2177,11 @@ body{
   }
   
   .field input {
-    max-width: 100% !important;
+    max-width: 90% !important;
   }
   
   .field textarea {
-    max-width: 100%;
+    max-width: 90%;
     min-height: 100px;
   }
 }
